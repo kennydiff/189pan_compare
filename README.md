@@ -6,9 +6,9 @@
 
 为提升效率这样做的。否则用189pan的工具或者go版本的cli工具(github)都无法完整上传十几个T的数据到云端
 
-export.py 为导出本地的movies列表到字典，然后持久化
+export_local_mov_json/export.py 为导出本地的movies列表到字典，然后持久化为json
 
-
+./189pan_compare/^ext/Exp_Mov_from_189cloud.log 是通过tickstep/cloudpan189-go这个项目的 (https://github.com/tickstep/cloudpan189-go)  导出指定文件/目录下面的所有文件的元数据信息，并保存到指定的本地文件(log/txt)里面。
 
 ## pretreat_4_189pan 背景
 
