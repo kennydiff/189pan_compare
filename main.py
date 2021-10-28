@@ -3,7 +3,6 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
-
 # def print_hi(name):
 #     # Use a breakpoint in the code line below to debug your script.
 #     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
@@ -15,7 +14,7 @@
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-# TODO 算法描述
+# TODO 算法描述_dsfsdf_v2 # Kenny@20211029 
 # 历遍本地Movies的路径，将所有文件都格式化成"/Movies/13(2010).1080p.BluRay.x264.DTS-HDChina/13.2010.1080p.BluRay.x264.DTS-HDChina.mkv"这样的格式
 # 并获取所有文件的大小，存入字典 dLocalMovies
 # 读取日志文件"Exp_Mov.txt", 将云端的Movies文件名/文件大小一个存入字典 dCloudMovies
@@ -25,7 +24,6 @@
 #   3. 取出本地无，远程有的子集   ...  dCloudMore
 
 import json
-
 
 # dic = {
 #     "/Movies/127.Hours.2010.1080p.BluRay.x264.DTS-HDChina/127.Hours.2010.1080p.BluRay.x264.DTS-HDChina.mkv": 8535532107,
@@ -62,7 +60,6 @@ dCloudMovies = txt_read('Exp_Mov.txt')
 # print(dCloudMovies[
 #           "/Movies/Broken.City.2013.1080p.BluRay.x264.DTS-WiKi/Broken.City.2013.1080p.BluRay.x264.DTS-WiKi.mkv"])
 
-
 # 初始目录，待处理的目录，可以修改
 # baseDir = "/Volumes/ELE18T-VIDEOS/^ELE18T/Animation/PiXAR.SHORT"
 
@@ -82,15 +79,13 @@ dLocalMovies = json.load(open('./dLocalMovies.json', 'r'))
 #         if dLocalMovies[item2] != dCloudMovies[item2]:
 #             print(item2)
 
-
 #   2. 查找本地无，远程有的子集   ...  dCloudMore 这个要从云端删掉。。。
 # for item in dCloudMovies:
 #     if item not in dLocalMovies:
 #         print(item)
 
-
 #   3. 查找本地有，远程没的子集   ...  dLocalMore  这些是新增的，需要上传
 dCloudMovies, dLocalMovies
 for item in dLocalMovies:
-    if item not in dCloudMovies:
+    if item not in dCloudMovies:        
         print(item)
