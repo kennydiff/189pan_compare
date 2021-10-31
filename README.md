@@ -10,6 +10,8 @@ export_local_mov_json/export.py 为导出本地的movies列表到字典，然后
 
 ./189pan_compare/^ext/Exp_Mov_from_189cloud.log 是通过tickstep/cloudpan189-go这个项目的 (https://github.com/tickstep/cloudpan189-go)  导出指定文件/目录下面的所有文件的元数据信息，并保存到指定的本地文件(log/txt)里面。
 
+
+
 ## pretreat_4_189pan 背景
 
 189天翼云盘的工程师都很犀利,,, 这个软件开发了那么多年了，还那么的不可靠，那么的不可描述。。。
